@@ -1,0 +1,56 @@
+/*
+advanced の追加事項
+　・　ヘッダーを固定する
+　・　.header_right imgを見えなくする
+　・　fontawsome の導入
+　・　fontawsome にマウスを持って行った時に徐々に赤くなる
+　・　main h1の文字の中央寄せ、文字間隔
+　・　.main_component_text p の行間
+　・　テキスト編集カーソルを使用しない
+*/
+
+/* ヘッダーを固定する */
+header{
+  position: fixed; /* これで固定 */
+  top: 0; /* これで上に固定 */
+}
+main{
+	margin-top: 80px; /* 固定したヘッダーの分80pxの余白を上にも設ける*/
+}
+
+/* .header_right imgを見えなくする */
+.header_right img{
+	display: none;
+}
+
+/* fontawsome の導入 */
+/* html の head に fontawesome を記入 */
+.fa-shopping-cart, .fa-user-circle{ /* 複数クラスにCSSを適用させる場合は、コンマで区切る */
+	display: inline-block !important;
+	margin: 0 8px;
+	font-size: 20px;
+	color: #616161;
+}
+
+/* fontawsome にマウスを持って行った時に徐々に赤くなる */
+.fa-shopping-cart:hover, .fa-user-circle:hover{
+	text-decoration: underline;
+	transition: all 1s;
+	color: red;
+}
+
+/* main h1の文字の中央寄せ、文字間隔 */
+main h1{
+	text-align: center;
+	letter-spacing: 0.5em;　/* emとは、main h1 のfont-size の〇倍という意味 */
+}
+
+/* .main_component_text p の行間 */
+.main_component_text p{
+	line-height: 2.5em;
+}
+
+/* テキスト編集カーソルを使用しない */
+body{
+	cursor: default; /* aタグとかはちゃんと変化する */
+}

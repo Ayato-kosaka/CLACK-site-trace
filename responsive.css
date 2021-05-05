@@ -1,0 +1,60 @@
+header .menu_icon{
+	display: none;
+}
+.header_left .links{
+	display: flex;
+}
+
+@media (max-width: 670px) {
+	.sp_display_none{ /* スマホサイズの時に消すクラス */
+		display: none !important;
+	}
+
+	header .menu_icon{
+		width: 74px;
+		display: flex; /* 中央揃え */
+		align-items: center;
+	}
+	header .menu_icon i{
+		font-size: 30px;
+		margin-left: 20px;
+	}
+	.header_left .links{
+		position: fixed;
+		top: 61.8px; /* header の下に */
+		left: 0px;
+		flex-direction: column;
+		width: 100vw; /* 横幅を画面幅に */
+	}
+	.header_left .links a{
+		margin: 0; /* margin: 0px 20px を消すため */
+		padding: 30px 20px;
+		background-color: white;
+		opacity: 0.9;
+		border-bottom: 1px solid black;
+	}
+	.header_right span{
+		display: none;
+	}
+	
+	.main_component{
+		flex-direction: column;
+	}
+	.main_component img{
+		width: 100%
+	}
+	.main_component_text{
+		width: 100%;
+		height: auto;
+		margin-top: 40px;
+	}
+	
+	.footer_menu{
+		flex-direction: column;
+	}
+	.footer_buisiness{
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+	
+}

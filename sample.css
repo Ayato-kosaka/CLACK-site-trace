@@ -1,0 +1,109 @@
+/* flex-box による構造作り */
+header{
+  display: flex;
+  justify-content: space-between;
+}
+.header_left{
+  display: flex;
+  align-items: center;
+}
+.header_right{
+  display: flex;
+  align-items: center;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_component{
+  display: flex;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+}
+.footer_menu{
+  display: flex;
+  justify-content: space-around;
+}
+.footer_buisiness{
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* 装飾 */
+body{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+
+header{
+  width: 100%;
+  border-bottom: 2px solid black;
+  background-color: white;
+}
+#logo_image{
+  height: 40px;
+  margin: 10px 20px;
+}
+.header_left a{
+  margin: 0px 20px;
+  color: #262626;
+}
+#cart_image{
+  margin: 10px 0px;
+}
+#user_image{
+  margin: 10px 10px;
+}
+.header_right span{
+  margin: 0px 20px;
+  color: #262626;
+}
+.header_right img{
+  width: 40px;
+  height: 40px;
+}
+
+main h1{
+  width: 100%;
+  max-width: 920px;
+}
+.main_component{
+  margin-bottom: 80px;
+}
+.main_component img{
+  width: 450px;
+  height: 556px;
+  object-fit: cover; /* 画像の比率を保持したまま拡大縮小ができる */
+}
+.main_component_text{
+  width: 450px;
+  height: 556px;
+}
+.main_component_text *{
+	margin: 0 20px;
+}
+
+footer{
+  background-color: #f2f2f2;
+}
+.footer_menu_innner{
+  list-style: none;
+}
+.footer_menu_innner h3, .footer_menu_innner a{
+  color: #616161;
+}
+.footer_buisiness{
+  padding: 30px 24px 16px;
+}
+.footer_buisiness a{
+  margin-right: 24px;
+  color: #616161;
+}
